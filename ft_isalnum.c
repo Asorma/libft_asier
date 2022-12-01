@@ -1,20 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ade-orma <ade-orma@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/30 21:07:48 by ade-orma          #+#    #+#             */
-/*   Updated: 2022/12/01 04:27:59 by ade-orma         ###   ########.fr       */
+/*   Updated: 2022/12/01 04:26:54 by ade-orma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isdigit(int i)
+int	ft_isalnum(int i)
 {
-	if ('0' <= i && '9' >= i)
+	if (ft_isalpha(i) == 1 || ft_isdigit(i) == 1)
 		return (1);
 	return (0);
 }
