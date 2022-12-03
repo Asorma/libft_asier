@@ -1,22 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ade-orma <ade-orma@student.42urduliz.com>  +#+  +:+       +#+        */
+/*   By: ade-orma <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/01 04:09:00 by ade-orma          #+#    #+#             */
-/*   Updated: 2022/12/03 10:28:58 by ade-orma         ###   ########.fr       */
+/*   Created: 2022/12/03 10:05:20 by ade-orma          #+#    #+#             */
+/*   Updated: 2022/12/03 10:40:30 by ade-orma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+int	ft_strlen(char *str)
+{
+	int i;
+	i = 0;
 
-int	ft_isalpha(int i);
-int	ft_isdigit(int i);
-int	ft_isalnum(int i);
-int	ft_isascii(int i);
-int ft_isprint(int i);
-
-#endif
+	while(str[i] != '/0')
+	{
+		i++;
+	}
+	i--;
+	return (i);
+}
