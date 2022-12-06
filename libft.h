@@ -6,7 +6,7 @@
 /*   By: ade-orma <ade-orma@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/01 04:09:00 by ade-orma          #+#    #+#             */
-/*   Updated: 2022/12/03 10:28:58 by ade-orma         ###   ########.fr       */
+/*   Updated: 2022/12/06 19:49:15 by ade-orma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@ int	ft_isalpha(int i);
 int	ft_isdigit(int i);
 int	ft_isalnum(int i);
 int	ft_isascii(int i);
-int ft_isprint(int i);
+int	ft_isprint(int i);
+int ft_strlen(int i);
 
 #endif
