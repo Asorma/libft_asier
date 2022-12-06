@@ -1,26 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ade-orma <ade-orma@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/01 04:09:00 by ade-orma          #+#    #+#             */
-/*   Updated: 2022/12/06 21:59:02 by ade-orma         ###   ########.fr       */
+/*   Created: 2022/12/06 22:50:20 by ade-orma          #+#    #+#             */
+/*   Updated: 2022/12/06 23:08:09 by ade-orma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
-# include <unistd.h>
+#include "libft.h"
 
-int	ft_isalpha(int i);
-int	ft_isdigit(int i);
-int	ft_isalnum(int i);
-int	ft_isascii(int i);
-int	ft_isprint(int i);
-int	ft_strlen(int i);
-int	ft_toupper(int i);
-int	ft_tolower(int i);
+size_t	ft_strlcpy(chat *dst, char *src, size_t size)
+{
+	size_t	i;
 
-#endif
+	if (size == 0)
+	{
+		while (src[i++])
+			i++;
+		return (i);
+	}
+	while (i < size - 1 && src[i] != '\0')
+	{
+		dst[i] = src[i];
+		i++;
+	}
+	if (i < size)
+		dst[i] = '\0';
+	while (src[i] != '\0')
+		i++;
+	return (i);

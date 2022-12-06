@@ -1,26 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ade-orma <ade-orma@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/01 04:09:00 by ade-orma          #+#    #+#             */
-/*   Updated: 2022/12/06 21:59:02 by ade-orma         ###   ########.fr       */
+/*   Created: 2022/12/06 21:50:06 by ade-orma          #+#    #+#             */
+/*   Updated: 2022/12/06 21:53:18 by ade-orma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
-# include <unistd.h>
+#include "libft.h"
 
-int	ft_isalpha(int i);
-int	ft_isdigit(int i);
-int	ft_isalnum(int i);
-int	ft_isascii(int i);
-int	ft_isprint(int i);
-int	ft_strlen(int i);
-int	ft_toupper(int i);
-int	ft_tolower(int i);
-
-#endif
+int	ft_toupper(int i)
+{
+	if (i >= 'a' && i <= 'z')
+		return (i - 32);
+	return (i);
+}

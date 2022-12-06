@@ -10,54 +10,37 @@
 #                                                                              #
 # **************************************************************************** #
 
+SRCS		=	 ft_isalpha \
+				ft_isdigit \
+				ft_isalnum \
+				ft_isascii \
+				ft_isprint \
+				ft_toupper \
+				ft_tolower \
+
+
+
+OBJS		=	$(SRCS:.c=.o)
+
+
+CC			=	gcc
+RM			=	rm -f
+CFLAGS		=	-Wall -Wextra -Werror
+
 NAME		=	libft.a
-CFLAGS		=	-Wextra -Wall -Werror
-AR			=	ar
-ARFLAGS		=	rc
-LIB			=	ft_isalnum.c	\
 
-#	Objects
-OBJS		= $(LIB:%.c=%.o)
+all:			$(NAME)
 
-################
-##   COLORS   ##
-################
+$(NAME):		$(OBJS)
+				ar rcs $(NAME) $(OBJS)
 
-Y			=	"\033[33m"
-R			=	"\033[31m"
-G			=	"\033[32m"
-B			=	"\033[34m"
-X			=	"\033[0m"
-UP			=	"\033[A"
-CUT			=	"\033[K"
-
-#################
-##  TARGETS    ##
-#################
-
-#	First target
-all:	$(NAME)
-
-#	Compiler
-CC	= gcc
-RM	= @/bin/rm -f
-%.o: %.c
-	$(CC) -o $@ -c $< $(CFLAGS)
-$(NAME): $(OBJS)
-	$(AR) $(ARFLAGS) $(NAME) $(OBJS)
-	ranlib $(NAME)
-
-#	Removing objects
 clean:
-			@echo ${B}Cleaning ${X}${R}${OBJS}${X}
-			$(RM) $(OBJS)
+				$(RM) $(OBJS)
 
-#	Removing objects and exe
-fclean:		clean
-			@echo ${B}Cleaning ${X}${R}${NAME}${X}
-			$(RM) $(NAME)
+fclean:			clean
+				$(RM) $(NAME)
 
-#	All removing then compiling
-re:			fclean all
+re:				fclean $(NAME)
 
-.PHONY:		all clean fclean re
+
+.PHONY:			all clean fclean re bonus
