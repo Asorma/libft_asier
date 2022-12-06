@@ -1,17 +1,17 @@
 # libft_asier
 lift project
 
-ft_isalpha:
+ft_isalpha: DONE
 
-ft_isdigit:
+ft_isdigit: DONE
 
-ft_isalnum:
+ft_isalnum: DONE
 
-ft_isascii:
+ft_isascii: DONE
 
-ft_isprint:
+ft_isprint: DONE
 
-ft_strlen:
+ft_strlen: DONE
 
 ft_memset:
 
@@ -21,13 +21,13 @@ ft_memcpy:
 
 ft_memmove:
 
-ft_strlcpy:
+ft_strlcpy: DONE
 
-ft_strlcat:
+ft_strlcat: DONE
 
-ft_toupper:
+ft_toupper: DONE
 
-ft_tolower:
+ft_tolower: DONE
 
 ft_strchr:
 
