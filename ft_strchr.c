@@ -1,25 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ade-orma <ade-orma@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/03 10:05:20 by ade-orma          #+#    #+#             */
-/*   Updated: 2022/12/08 18:11:18 by ade-orma         ###   ########.fr       */
+/*   Created: 2022/12/08 17:19:25 by ade-orma          #+#    #+#             */
+/*   Updated: 2022/12/08 18:19:53 by ade-orma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+*Searches the first ocurrence of a char on a string
+*If found, returns the position and if not returns null
+*/
+
 #include "libft.h"
 
-int	ft_strlen(char *str)
+char	*strchr(const char *str, int c)
 {
-	int	i;
-
-	i = 0;
-	while (str[i] != '/0')
-	{
-		i++;
-	}
-	return (i);
+	while (*str && *str != (unsigned char)c)
+		str++;
+	if (c == '\0')
+		return ((char *)str);
+	return (NULL);
 }
