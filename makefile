@@ -6,17 +6,17 @@
 #    By: ade-orma <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/12/06 12:02:18 by ade-orma          #+#    #+#              #
-#    Updated: 2022/12/06 12:02:25 by ade-orma         ###   ########.fr        #
+#    Updated: 2022/12/09 12:32:33 by ade-orma         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-SRCS		=	 ft_isalpha \
-				ft_isdigit \
-				ft_isalnum \
-				ft_isascii \
-				ft_isprint \
-				ft_toupper \
-				ft_tolower \
+SRCS		=	 ft_isalpha.c \
+				ft_isdigit.c \
+				ft_isalnum.c \
+				ft_isascii.c \
+				ft_isprint.c \
+				ft_toupper.c \
+				ft_tolower.c \
 
 
 

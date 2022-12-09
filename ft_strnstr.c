@@ -6,7 +6,7 @@
 /*   By: ade-orma <ade-orma@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/08 18:26:37 by ade-orma          #+#    #+#             */
-/*   Updated: 2022/12/08 18:26:37 by ade-orma         ###   ########.fr       */
+/*   Updated: 2022/12/09 12:29:02 by ade-orma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,12 +16,12 @@
 //Si se da el caso, se retorna la primera posicion donde sucede
 //En caso de no encontrar nada, se devuelve NULL
 
-char 	strnstr (const char *strref, const char *strbusq, size_t len)
+char	strnstr(const char *strref, const char *strbusq, size_t len)
 {
-    size_t		i;
-	int			length;
-	char		*large;
-	char		*small;
+	size_t	i;
+	int		length;
+	char	*large;
+	char	*small;
 
 	if (*strbusq == '\0')
 		return ((char *)strref);
