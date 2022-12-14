@@ -6,7 +6,7 @@
 /*   By: ade-orma <ade-orma@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/06 21:50:06 by ade-orma          #+#    #+#             */
-/*   Updated: 2022/12/06 21:57:03 by ade-orma         ###   ########.fr       */
+/*   Updated: 2022/12/12 10:15:34 by ade-orma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_tolower(int i)
 {
-	if (i >= 'A' && i <= 'A')
+	if (i >= 'A' && i <= 'Z')
 		return (i + 32);
 	return (i);
 }

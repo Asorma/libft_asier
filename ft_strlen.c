@@ -6,18 +6,18 @@
 /*   By: ade-orma <ade-orma@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/03 10:05:20 by ade-orma          #+#    #+#             */
-/*   Updated: 2022/12/08 18:11:18 by ade-orma         ###   ########.fr       */
+/*   Updated: 2022/12/12 10:17:20 by ade-orma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strlen(char *str)
+int	ft_strlen(const char *str)
 {
 	int	i;
 
 	i = 0;
-	while (str[i] != '/0')
+	while (str[i])
 	{
 		i++;
 	}

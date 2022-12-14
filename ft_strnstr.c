@@ -16,25 +16,29 @@
 //Si se da el caso, se retorna la primera posicion donde sucede
 //En caso de no encontrar nada, se devuelve NULL
 
-char	strnstr(const char *strref, const char *strbusq, size_t len)
+#include "libft.h"
+
+char	*ft_strnstr(const char *haystack, const char *needle, size_t n)
 {
 	size_t	i;
-	int		length;
-	char	*large;
-	char	*small;
+	size_t	j;
 
-	if (*strbusq == '\0')
-		return ((char *)strref);
-	large = (char *)strref;
-	small = (char *)strbusq;
 	i = 0;
-	length = ft_strlen(small);
-	while (large[i] != '\0' && (i + length) <= len)
+	j = 0;
+	if (needle == NULL || needle[0] == '\0')
+		return ((char *)haystack);
+	while (haystack[i] != '\0' && i < n)
 	{
-		if (ft_strncmp((large + i), small, length) == 0)
+		if (haystack[i] == needle[j])
 		{
-			return (large + i);
-		}
+			while (haystack[i + j] == needle[j] && i + j < n)
+			{
+				if (needle[j + 1] == '\0')
+					return ((char *)haystack + i);
+				j++;
+			}
+			j = 0;
+		}	
 		i++;
 	}
 	return (NULL);

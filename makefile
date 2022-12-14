@@ -6,7 +6,7 @@
 #    By: ade-orma <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/12/06 12:02:18 by ade-orma          #+#    #+#              #
-#    Updated: 2022/12/09 12:32:33 by ade-orma         ###   ########.fr        #
+#    Updated: 2022/12/12 10:25:04 by ade-orma         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,6 +17,14 @@ SRCS		=	 ft_isalpha.c \
 				ft_isprint.c \
 				ft_toupper.c \
 				ft_tolower.c \
+				ft_atoi.c \
+				ft_strlen.c \
+				ft_strlcpy.c \
+				ft_strlcat.c \
+				ft_strchr.c \
+				ft_strrchr.c \
+				ft_strncmp.c \
+				ft_strnstr.c
 
 
 
