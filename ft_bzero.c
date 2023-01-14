@@ -1,36 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ade-orma <ade-orma@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/06 22:50:20 by ade-orma          #+#    #+#             */
-/*   Updated: 2023/01/14 13:31:21 by ade-orma         ###   ########.fr       */
+/*   Created: 2023/01/14 13:45:18 by ade-orma          #+#    #+#             */
+/*   Updated: 2023/01/14 14:02:07 by ade-orma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+//Pone ceros desde el inicio del string hasta la longitud que le pasamos
+
 #include "libft.h"
 
-size_t	ft_strlcpy(char *dest, const char *src, size_t size)
+void	ft_bzero(void *str, size_t s)
 {
 	size_t	i;
 
 	i = 0;
-	if (size == 0)
+	while (i < s)
 	{
-		while (src[i])
-			i++;
-		return (i);
-	}
-	while (i < size - 1 && src[i] != '\0')
-	{
-		dest[i] = src[i];
+		((char *)str)[i] = 0;
 		i++;
 	}
-	if (i < size)
-		dest[i] = '\0';
-	while (src[i] != '\0')
-		i++;
-	return (i);
 }

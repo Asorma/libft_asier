@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ade-orma <ade-orma@student.42urduliz.com>  +#+  +:+       +#+        */
+/*   By: ade-orma <ade-orma@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/01 04:09:00 by ade-orma          #+#    #+#             */
-/*   Updated: 2022/12/12 10:29:45 by ade-orma         ###   ########.fr       */
+/*   Updated: 2023/01/14 14:00:41 by ade-orma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,5 +29,6 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size);
 size_t	ft_strlcat(char *dst, const char *src, size_t size);
 char	*strchr(const char *str, int c);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
+void	ft_bzero(void *str, size_t s);
 
 #endif
