@@ -1,31 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ade-orma <ade-orma@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ade-orma <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/08 17:19:25 by ade-orma          #+#    #+#             */
-/*   Updated: 2023/01/18 18:27:55 by ade-orma         ###   ########.fr       */
+/*   Created: 2023/01/18 17:07:32 by ade-orma          #+#    #+#             */
+/*   Updated: 2023/01/18 17:20:59 by ade-orma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-*Searches the first ocurrence of a char on a string
-*If found, returns the position and if not returns null
-*/
+//Pone el simbolo que le pasamos tantas veces como las veces que le hemos dicho
 
 #include "libft.h"
 
-char	*ft_strchr(const char *str, int c)
+void	*ft_memset(void *str, int c, size_t n)
 {
-	while (*str && *str != (unsigned char)c)
+	size_t	i;
+
+	i = 0;
+	while (i < n)
 	{
-		str++;
+		((char *)str)[i] = (unsigned char)c;
+		i++;
 	}
-	if ((char)c == *str)
-	{
-		return ((char *)str);
-	}
-	return (NULL);
+	return (str);
 }

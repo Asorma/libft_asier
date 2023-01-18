@@ -1,31 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ade-orma <ade-orma@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ade-orma <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/08 17:19:25 by ade-orma          #+#    #+#             */
-/*   Updated: 2023/01/18 18:27:55 by ade-orma         ###   ########.fr       */
+/*   Created: 2023/01/18 17:50:11 by ade-orma          #+#    #+#             */
+/*   Updated: 2023/01/18 18:14:37 by ade-orma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-*Searches the first ocurrence of a char on a string
-*If found, returns the position and if not returns null
-*/
-
 #include "libft.h"
 
-char	*ft_strchr(const char *str, int c)
+void	*ft_memmove(void *to, const void *from, size_t nBytes)
 {
-	while (*str && *str != (unsigned char)c)
+	char	*c_from;
+	char	*c_to;
+
+	c_from = (char *)from;
+	c_to = (char *)to;
+	if (c_from < c_to)
 	{
-		str++;
+		while (nBytes--)
+			c_to[nBytes] = c_from[nBytes];
 	}
-	if ((char)c == *str)
-	{
-		return ((char *)str);
-	}
-	return (NULL);
+	else
+		ft_memcpy(c_to, c_from, nBytes);
+	return (c_to);
 }
