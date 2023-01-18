@@ -39,7 +39,7 @@ ft_memchr:
 
 ft_memcmp:
 
-ft_strnstr:
+ft_strnstr: 99%
 
 ft_atoi: DONE
 
