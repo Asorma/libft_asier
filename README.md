@@ -13,13 +13,13 @@ ft_isprint: DONE
 
 ft_strlen: DONE
 
-ft_memset:
+ft_memset: DONE
 
-ft_bzero:
+ft_bzero: DONE
 
-ft_memcpy:
+ft_memcpy: DONE
 
-ft_memmove:
+ft_memmove: DONE
 
 ft_strlcpy: DONE
 
@@ -29,9 +29,9 @@ ft_toupper: DONE
 
 ft_tolower: DONE
 
-ft_strchr:
+ft_strchr: DONE
 
-ft_strrchr:
+ft_strrchr: DONE
 
 ft_strncmp:
 
@@ -41,7 +41,7 @@ ft_memcmp:
 
 ft_strnstr:
 
-ft_atoi:
+ft_atoi: DONE
 
 
 #MALLOC FUNCTIONS
