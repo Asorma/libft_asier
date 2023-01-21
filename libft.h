@@ -6,7 +6,7 @@
 /*   By: ade-orma <ade-orma@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/01 04:09:00 by ade-orma          #+#    #+#             */
-/*   Updated: 2023/01/18 18:12:09 by ade-orma         ###   ########.fr       */
+/*   Updated: 2023/01/21 12:15:20 by ade-orma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,12 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size);
 char	*ft_strchr(const char *str, int c);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 void	ft_bzero(void *str, size_t s);
+void	*ft_memchr(const void *str, int c, size_t nBytes);
+int		ft_memcmp(const void *str1, const void *str2, size_t nBytes);
 void	*ft_memset(void *str, int c, size_t n);
 void	*ft_memcpy(void *to, const void *from, size_t nBytes);
 void	*ft_memmove(void *to, const void *from, size_t nBytes);
+void	*ft_calloc(size_t count, size_t nBytes);
+char	*ft_strdup(const char *str1);
 
 #endif
