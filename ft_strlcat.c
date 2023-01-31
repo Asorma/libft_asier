@@ -10,23 +10,29 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+*	strlcat
+*	Funcion que concatena los primeros nBytes del string from en el 
+*	string to
+*/
+
 #include "libft.h"
 
-size_t	ft_strlcat(char *dst, const char *src, size_t size)
+size_t	ft_strlcat(char *to, const char *from, size_t nBytes)
 {
 	size_t	i;
 	size_t	j;
 
 	i = 0;
 	j = 0;
-	while (dst[i] && i < size)
+	while (to[i] && i < nBytes)
 		i++;
-	while (src[j] && (i + j + 1) < size)
+	while (from[j] && (i + j + 1) < nBytes)
 	{
-		dst[i + j] = src[j];
+		to[i + j] = from[j];
 		j++;
 	}
-	if (i < size)
-		dst[i + j] = '\0';
-	return (i + ft_strlen(src));
+	if (i < nBytes)
+		to[i + j] = '\0';
+	return (i + ft_strlen(from));
 }
