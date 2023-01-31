@@ -10,16 +10,20 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-//Pone el simbolo que le pasamos tantas veces como las veces que le hemos dicho
+/*
+*	memset
+*	Funcion que escribe el valor que queramos desde el inicio tantas veces
+*	como nBytes le hayamos dicho
+*/
 
 #include "libft.h"
 
-void	*ft_memset(void *str, int c, size_t n)
+void	*ft_memset(void *str, int c, size_t nBytes)
 {
 	size_t	i;
 
 	i = 0;
-	while (i < n)
+	while (i < nBytes)
 	{
 		((char *)str)[i] = (unsigned char)c;
 		i++;
