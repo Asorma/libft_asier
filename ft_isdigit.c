@@ -10,6 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+*	isdigit
+*	Funcion que comprueba si el valor pertenece al sistema decimal
+*/
+
 #include "libft.h"
 
 int	ft_isdigit(int i)
