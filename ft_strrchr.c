@@ -14,7 +14,7 @@
 *	strrchr
 *	Busca la ultima ocasion en la que un caracter c que definimos. 
 *	Una vez encontrado, la funcion devuelve la cadena empezando por ese
-*	caracter y todo lo que haya despues. Asier / s -> sier
+*	caracter y todo lo que haya despues. Asier sabin / s -> sabin
 */
 
 #include "libft.h"
