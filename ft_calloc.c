@@ -10,6 +10,13 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+*	calloc
+*	Misma funcionalidad que la funcion malloc, pero poniendo ceros para
+*	borrar la basura que puede haber en la memoria reservada.
+*	Util cuando no quieres que tu programa lea por error datos que no debe
+*/
+
 #include "libft.h"
 
 void	*ft_calloc(size_t count, size_t nBytes)
