@@ -10,6 +10,12 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+*	tolower
+*	Funcion que chequea si el caracter alfabetico es mayuscula y si es
+*	asi lo pasa a minuscula
+*/
+
 #include "libft.h"
 
 int	ft_tolower(int i)
