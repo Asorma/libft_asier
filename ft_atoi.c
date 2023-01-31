@@ -10,6 +10,12 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+*	Ascii TO Integer
+*	Toma los numeros de una cadena de caracteres numericos ASCII
+*	y los convierte a su numero equivalente en INT para poder operar.
+*/
+
 #include "libft.h"
 #include <unistd.h>
 
