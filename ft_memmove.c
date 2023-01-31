@@ -10,6 +10,13 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+*	memmove
+*	Funcion que utiliza lo mismo que el memcpy pero con la diferencia de
+*	que en memcpy borramos el dst para siempre. En esta funcion el to
+*	se mueve a otro string y despues borramos el to original con el from
+*/
+
 #include "libft.h"
 
 void	*ft_memmove(void *to, const void *from, size_t nBytes)
