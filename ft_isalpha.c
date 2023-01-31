@@ -10,6 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+*	isalpha
+*	Funcion para chequear si el valor que se le pasa es alfabetico
+*/
+
 #include "libft.h"
 
 int	ft_isalpha(int i)
