@@ -10,11 +10,14 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+/*	
+*	strnstr
+*	Busca una subcadena dentro de una cadera
+*	Si se da el caso, se retorna la primera posicion donde sucede
+*	En caso de no encontrar nada, se devuelve NULL
+*/
 
-//Busca una subcadena dentro de una cadera
-//Si se da el caso, se retorna la primera posicion donde sucede
-//En caso de no encontrar nada, se devuelve NULL
+#include "libft.h"
 
 #include "libft.h"
 
