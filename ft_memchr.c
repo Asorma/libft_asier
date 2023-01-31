@@ -10,6 +10,13 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+*	memchr
+*	Funcion que encuentra si hay un caracter de tipo unsigned en los 
+*	primeros nBytes del string que se le pasa.
+*	Si el caracter existe lo entrega y si no da un NULL
+*/
+
 #include "libft.h"
 
 void	*ft_memchr(const void *str, int c, size_t nBytes)
