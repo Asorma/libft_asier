@@ -12,20 +12,14 @@
 
 /*
 *	bzero
-*	Limpia los datos de un string desde el inicio hasta donde le indiquemos
-*	a base de poner ceros.
+*	A esta funcion le llega un string y el numero de bytes que queremos
+*	selecionar. La funcion se ocupa de poner ceros desde el inicio del
+*	string hasta el valor nBytes que le hayamos pasado.
 */
 
 #include "libft.h"
 
-void	ft_bzero(void *str, size_t s)
+void	ft_bzero(void *str, size_t nBytes)
 {
-	size_t	i;
-
-	i = 0;
-	while (i < s)
-	{
-		((char *)str)[i] = 0;
-		i++;
-	}
+	ft_memset(str, 0, nBytes);
 }
