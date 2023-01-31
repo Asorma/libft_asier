@@ -10,6 +10,15 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+*	memcmp
+*	Funcion que compara 2 string en sus valores ASCII en nBytes desde cero
+*	Si son iguales en cada uno de los bytes se devuelve 0
+*	Si son distintos se devuelve la resta del valor ASCII (str1 - str2)
+*	Importante el poner todo en unsigned para evitar valores desiguales aun
+*	cuando el byte tenga el mismo valor
+*/
+
 #include "libft.h"
 
 int	ft_memcmp(const void *str1, const void *str2, size_t nBytes)
