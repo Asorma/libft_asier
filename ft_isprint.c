@@ -10,6 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*	
+*	isprint
+*	Funcion que comprueba si el caracter es imprimible en pantalla
+*/
+
 int	ft_isprint(int i)
 {
 	if (i >= 32 && i <= 126)
