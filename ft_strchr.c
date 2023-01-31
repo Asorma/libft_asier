@@ -11,8 +11,10 @@
 /* ************************************************************************** */
 
 /*
-*Searches the first ocurrence of a char on a string
-*If found, returns the position and if not returns null
+*	strchr
+*	Funcion que busca un caracter que le indicamos en un string que 
+*	le pasamos. Si lo encuentra, la funcion devuelve la posicion del caracter,
+*	si no, pues nos devuelve un NULL
 */
 
 #include "libft.h"
