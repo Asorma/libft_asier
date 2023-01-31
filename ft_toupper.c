@@ -10,6 +10,12 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+*	toupper
+*	Funcion que chequea si el caracter alfabetico es minuscula y si es
+*	asi lo pasa a mayuscula
+*/
+
 #include "libft.h"
 
 int	ft_toupper(int i)
