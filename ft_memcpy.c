@@ -10,6 +10,12 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+*	memcpy
+*	Funcion que copia los primeros nBytes del
+*	string denominado from al string to.
+*/
+
 #include "libft.h"
 
 void	*ft_memcpy(void *to, const void *from, size_t nBytes)
