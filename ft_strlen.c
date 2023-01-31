@@ -10,6 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+*	strlen
+*	Funcion que devuelve la longitud de una cadena de caracteres.
+*/
+
 #include "libft.h"
 
 int	ft_strlen(const char *str)
