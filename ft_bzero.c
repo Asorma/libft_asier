@@ -10,7 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-//Pone ceros desde el inicio del string hasta la longitud que le pasamos
+/*
+*	bzero
+*	Limpia los datos de un string desde el inicio hasta donde le indiquemos
+*	a base de poner ceros.
+*/
 
 #include "libft.h"
 
