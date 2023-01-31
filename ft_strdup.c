@@ -10,6 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+*	strdup
+*	Funcion que duplica una cadena de caracteres y nos devuelve el duplicado.
+*/
+
 #include "libft.h"
 
 char	*ft_strdup(const char *str1)
