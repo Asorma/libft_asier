@@ -10,6 +10,13 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+*	strrchr
+*	Busca la ultima ocasion en la que un caracter c que definimos. 
+*	Una vez encontrado, la funcion devuelve la cadena empezando por ese
+*	caracter y todo lo que haya despues. Asier / s -> sier
+*/
+
 #include "libft.h"
 
 char	*ft_strrchr(const char *str, int c)
