@@ -10,13 +10,20 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+*	strncmp
+*	Funcion que compara 2 strings y devuelve la diferencia de la
+*	resta entre el valor de la resta s1[i] - s2[2] en los primeros nBytes
+*/
+
+
 #include "libft.h"
 
-int	ft_strncmp(const char *s1, const char *s2, size_t n)
+int	ft_strncmp(const char *s1, const char *s2, size_t nBytes)
 {
-	if (n == 0)
+	if (nBytes == 0)
 		return (0);
-	while (--n && *s1 && *s2)
+	while (--nBytes && *s1 && *s2)
 	{
 		if (*(unsigned char *)s1 != *(unsigned char *)s2)
 			return (*(unsigned char *)s1 - *(unsigned char *)s2);
