@@ -10,27 +10,32 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+*	strlcpy
+*	Funcion que copia nBytes del string from y los pone en el to, añadiendo
+*	el caracter null al final. Este null final evita inyeccion de codigo
+*	
 #include "libft.h"
 
-size_t	ft_strlcpy(char *dest, const char *src, size_t size)
+size_t	ft_strlcpy(char *to, const char *from, size_t nBytes)
 {
 	size_t	i;
 
 	i = 0;
-	if (size == 0)
+	if (nBytes == 0)
 	{
-		while (src[i])
+		while (from[i])
 			i++;
 		return (i);
 	}
-	while (i < size - 1 && src[i] != '\0')
+	while (i < nBytes - 1 && from[i] != '\0')
 	{
-		dest[i] = src[i];
+		to[i] = from[i];
 		i++;
 	}
-	if (i < size)
-		dest[i] = '\0';
-	while (src[i] != '\0')
+	if (i < nBytes)
+		to[i] = '\0';
+	while (from[i] != '\0')
 		i++;
 	return (i);
 }
