@@ -10,6 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+*	isalnum
+*	Comprueba si el valor enviado es alfanumerico
+*/
+
 #include "libft.h"
 
 int	ft_isalnum(int i)
