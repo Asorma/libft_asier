@@ -6,9 +6,21 @@
 /*   By: ade-orma <ade-orma@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/21 13:29:58 by ade-orma          #+#    #+#             */
-/*   Updated: 2023/02/11 17:23:41 by ade-orma         ###   ########.fr       */
+/*   Updated: 2023/02/11 19:24:35 by ade-orma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+ * 	ft_substr
+ * 	A esta funcion se le mete un string (valor str) y le decimos que devuelva
+ * 	el trozo del string que queremos, para ello tomamos el inicio de donde 
+ * 	vamos a empezar a cortar con el valor inicio y cuantos vamos desde ese 
+ * 	inicio hasta el valor nBytes indicado.
+ * 	str: Me llamo Asier Sabin
+ * 	inicio: 3 (contando desde 0)
+ * 	nBytes: 11
+ * 	resultado: llamo Asier
+ */
 
 #include "libft.h"
 
