@@ -6,7 +6,7 @@
 /*   By: ade-orma <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/11 20:00:10 by ade-orma          #+#    #+#             */
-/*   Updated: 2023/02/11 21:01:27 by ade-orma         ###   ########.fr       */
+/*   Updated: 2023/02/12 12:20:28 by ade-orma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,31 +18,46 @@
 
 #include "libft.h"
 
+int	ft_nbrlen(int n)
+{
+	int	len;
+
+	len = 0;
+	if (n == 0)
+		len = 1;
+	if (n < 0)
+		len++;
+	while (n != 0)
+	{
+		len++;
+		n /= 10;
+	}
+	return (len);
+}
+
 char	*ft_itoa(int n)
 {
-	char	*str;
-	char	*str2;
+	char	*ptr;
+	long	num;
+	size_t	len;
 
-	str = (char *)malloc(sizeof(char) * 2);
-	if (!str)
+	len = ft_nbrlen(n);
+	num = n;
+	ptr = (char *)malloc(sizeof(char) * (len + 1));
+	if (!ptr)
 		return (NULL);
-	if (n == -2147483648)
+	ptr[len--] = '\0';
+	if (num < 0)
 	{
-		*str2 = ft_strcpy(str, "-214783648");
-		return (str2);
+		ptr[0] = '-';
+		num = -num;
 	}
-	if (n < 0)
+	if (num == 0)
+		ptr[0] = '0';
+	while (num > 0)
 	{
-		str[0] = '-';
-		str[1] = '\0';
-		str = ft_strjoin(str, ft_itoa(-n));
+		ptr[len--] = (num % 10) + '0';
+		num /= 10;
 	}
-	else if (n >= 10)
-		str = ft_strjoin(ft_itoa(n / 10), ft_itoa(n % 10));
-	else if (n < 10 && n >= 0)
-	{
-		str[0] = n + '0';
-		str[1] = '\0';
-	}
-	return (str);
+	return (ptr);
 }
