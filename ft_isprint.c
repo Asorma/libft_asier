@@ -10,9 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-/*	
+/*
 *	isprint
-*	Funcion que comprueba si el caracter es imprimible en pantalla
+*	Function that checks if the character is printable on the screen.
 */
 
 int	ft_isprint(int i)
