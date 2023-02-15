@@ -11,10 +11,12 @@
 /* ************************************************************************** */
 
 /*
-*	strlcpy
-*	Funcion que copia nBytes del string from y los pone en el to, añadiendo
-*	el caracter null al final. Este null final evita inyeccion de codigo
-*/	
+* ft_strlcpy
+* Function that copies `nBytes` of the string `from` and puts them into `to`,
+* adding the null character at the end. This null character prevents code
+* injection.
+*/
+
 #include "libft.h"
 
 size_t	ft_strlcpy(char *to, const char *from, size_t nBytes)
