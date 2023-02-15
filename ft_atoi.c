@@ -12,9 +12,10 @@
 
 /*
 *	Ascii TO Integer
-*	Toma los numeros de una cadena de caracteres numericos ASCII
-*	y los convierte a su numero equivalente en INT para poder operar.
+*	Takes the numbers from a string of ASCII numeric characters
+*	and converts them to their equivalent INT number for calculations.
 */
+
 
 #include "libft.h"
 #include <unistd.h>
