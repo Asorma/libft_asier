@@ -10,11 +10,12 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-/*	
-*	strnstr
-*	Busca una subcadena dentro de una cadera
-*	Si se da el caso, se retorna la primera posicion donde sucede
-*	En caso de no encontrar nada, se devuelve NULL
+/*
+* ft_strnstr
+* Function that locates a substring `needle` in a string `haystack`, up to a
+* maximum `nBytes` characters. If the `needle` is found, the function returns
+* a pointer to the first occurrence of the `needle` in the `haystack`. If the
+* `needle` is not found, the function returns NULL.
 */
 
 #include "libft.h"
