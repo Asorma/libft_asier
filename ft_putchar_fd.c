@@ -10,6 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+*	ft_putchar_fd
+*	Function that writes a single character `c` to the file descriptor `fd`.
+*/
+
 #include <unistd.h>
 #include "libft.h"
 
