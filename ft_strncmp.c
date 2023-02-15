@@ -11,10 +11,12 @@
 /* ************************************************************************** */
 
 /*
-*	strncmp
-*	Funcion que compara 2 strings y devuelve la diferencia de la
-*	resta entre el valor de la resta s1[i] - s2[2] en los primeros nBytes
+* ft_strncmp
+* Function that compares two strings and returns the difference of the
+* subtraction between the value of the subtraction s1[i] - s2[2] in the first
+* `nBytes`.
 */
+
 #include "libft.h"
 
 int	ft_strncmp(const char *s1, const char *s2, size_t nBytes)
