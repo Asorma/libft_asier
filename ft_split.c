@@ -11,14 +11,14 @@
 /* ************************************************************************** */
 
 /*
- *	ft_split
- *	This function takes a string 's' and a delimiter character 'c' and splits
- *	the string into words based on the delimiter. It first counts the number
- *	of words in the string, then allocates memory for an array of strings
- *	to hold the words. It then copies each word into the array, and finally 
- *	adds a NULL terminator to the end of the array. The function returns the
- *	array of strings.
- */
+*	ft_split
+*	Function that takes a string `s` and a delimiter character `c`, and 
+*	splits the string into words based on the delimiter. It first counts
+*	the number of words in the string, then allocates memory for an array 
+*	of strings to hold the words. It then copies each word into the array, 
+*	and finally adds a NULL terminator to the end of the array. 
+*	The function returns the array of strings.
+*/
 
 #include "libft.h"
 
