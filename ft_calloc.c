@@ -12,10 +12,11 @@
 
 /*
 *	calloc
-*	Misma funcionalidad que la funcion malloc, pero poniendo ceros para
-*	borrar la basura que puede haber en la memoria reservada.
-*	Util cuando no quieres que tu programa lea por error datos que no debe
+*	Same functionality as malloc, but setting the allocated memory to zero
+*	to clear any garbage data that may exist in the memory.
+*	Useful when you don't want your program to accidentally read data that it shouldn't.
 */
+
 
 #include "libft.h"
 
