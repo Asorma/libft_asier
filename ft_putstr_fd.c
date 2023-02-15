@@ -10,6 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+*	ft_putstr_fd
+*	Function that writes the string `s` to the file descriptor `fd`.
+*/
+
 #include <unistd.h>
 #include "libft.h"
 
