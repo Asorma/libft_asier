@@ -11,10 +11,12 @@
 /* ************************************************************************** */
 
 /*
-*	strrchr
-*	Busca la ultima ocasion en la que un caracter c que definimos. 
-*	Una vez encontrado, la funcion devuelve la cadena empezando por ese
-*	caracter y todo lo que haya despues. Asier sabin / s -> sabin
+* ft_strrchr
+* Function that searches for the last occurrence of the character `c` in a
+* string `str`. If `c` is found, the function returns a pointer to the first
+* occurrence of the `c` character in the `str` string. If `c` is not found,
+* the function returns NULL.
+* Asier sabin / s -> sabin
 */
 
 #include "libft.h"
