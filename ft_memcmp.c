@@ -12,11 +12,10 @@
 
 /*
 *	memcmp
-*	Funcion que compara 2 string en sus valores ASCII en nBytes desde cero
-*	Si son iguales en cada uno de los bytes se devuelve 0
-*	Si son distintos se devuelve la resta del valor ASCII (str1 - str2)
-*	Importante el poner todo en unsigned para evitar valores desiguales aun
-*	cuando el byte tenga el mismo valor
+*	Function that compares two strings based on their ASCII values in the first nBytes from zero.
+*	If the values are the same for each byte, it returns 0.
+*	If they are different, it returns the difference between the ASCII values (str1 - str2).
+*	It's important to treat everything as unsigned to avoid unequal values even when the byte has the same value.
 */
 
 #include "libft.h"
