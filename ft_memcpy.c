@@ -12,8 +12,8 @@
 
 /*
 *	memcpy
-*	Funcion que copia los primeros nBytes del
-*	string denominado from al string to.
+*	Functions that copies the first nBytes of the "from" string 
+*	and makes a new string called "to" with the gathered bytes
 */
 
 #include "libft.h"
