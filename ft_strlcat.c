@@ -11,9 +11,9 @@
 /* ************************************************************************** */
 
 /*
-*	strlcat
-*	Funcion que concatena los primeros nBytes del string from en el 
-*	string to
+* ft_strlcat
+* Function that concatenates the first `nBytes` of the string `from`
+* onto the end of the string `to`.
 */
 
 #include "libft.h"
