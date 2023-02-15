@@ -10,6 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+ * This header file includes all the function prototypes of the library, as well
+ * as the necessary headers for these functions. 
+*/
+
 #ifndef LIBFT_H
 # define LIBFT_H
 # include <stdlib.h>
