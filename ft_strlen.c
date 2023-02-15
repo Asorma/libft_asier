@@ -11,8 +11,8 @@
 /* ************************************************************************** */
 
 /*
-*	strlen
-*	Funcion que devuelve la longitud de una cadena de caracteres.
+* ft_strlen
+* Function that returns the length of a string of characters.
 */
 
 #include "libft.h"
