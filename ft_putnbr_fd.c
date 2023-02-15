@@ -10,6 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+*	ft_putnbr_fd
+*	Function that writes the integer `n` to the file descriptor `fd`.
+*/
+
 #include <unistd.h>
 #include "libft.h"
 
