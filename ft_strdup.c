@@ -11,8 +11,8 @@
 /* ************************************************************************** */
 
 /*
-*	strdup
-*	Funcion que duplica una cadena de caracteres y nos devuelve el duplicado.
+*	ft_strdup
+*	Function that duplicates a string `str1` and returns the duplicate.
 */
 
 #include "libft.h"
