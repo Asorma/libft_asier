@@ -11,16 +11,16 @@
 /* ************************************************************************** */
 
 /*
- * 	ft_substr
- * 	A esta funcion se le mete un string (valor str) y le decimos que devuelva
- * 	el trozo del string que queremos, para ello tomamos el inicio de donde 
- * 	vamos a empezar a cortar con el valor inicio y cuantos vamos desde ese 
- * 	inicio hasta el valor nBytes indicado.
- * 	str: Me llamo Asier Sabin
- * 	inicio: 3 (contando desde 0)
- * 	nBytes: 11
- * 	resultado: llamo Asier
- */
+ * ft_substr
+ * Given a string `s`, this function returns a substring
+ * starting from the `start` index and with a length of `len`.
+ * 
+ * Example:
+ * s: "My name is Asier Sabin"
+ * start: 11
+ * len: 5
+ * result: "Asier"
+*/
 
 #include "libft.h"
 
