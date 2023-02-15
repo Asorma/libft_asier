@@ -12,8 +12,9 @@
 
 /*
 *	isalnum
-*	Comprueba si el valor enviado es alfanumerico
+*	Checks whether the given value is alphanumeric.
 */
+
 
 #include "libft.h"
 
