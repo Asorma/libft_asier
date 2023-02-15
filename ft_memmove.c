@@ -12,10 +12,11 @@
 
 /*
 *	memmove
-*	Funcion que utiliza lo mismo que el memcpy pero con la diferencia de
-*	que en memcpy borramos el dst para siempre. En esta funcion el to
-*	se mueve a otro string y despues borramos el to original con el from
-*/
+*	Function that works the same way as memcpy, but with the difference that
+*	in memcpy we overwrite dst forever. In this function, the data from `to`
+*	is moved to another string, and then we overwrite the original `to` with
+*	the data from `from`.
+*/	
 
 #include "libft.h"
 
