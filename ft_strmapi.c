@@ -10,6 +10,14 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+* ft_strmapi
+* Function that applies the function `f` to each character in the string `s`,
+* passing the index of the character as the first argument to `f`. It returns
+* a new string created by `malloc` that contains the results of the `f`
+* function applied to each character of `s`.
+*/
+
 #include "libft.h"
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
