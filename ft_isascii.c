@@ -10,10 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-/*	
+/*
 *	isascii
-*	Funcion para chequear si el valor entrante pertenece al ASCII
+*	Function to check if the incoming value belongs to ASCII.
 */
+
 
 #include "libft.h"
 
