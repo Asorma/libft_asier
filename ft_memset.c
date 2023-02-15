@@ -12,8 +12,8 @@
 
 /*
 *	memset
-*	Funcion que escribe el valor que queramos desde el inicio tantas veces
-*	como nBytes le hayamos dicho
+*	Function that writes a specific value `c` to the memory location pointed
+*	to by `str`, `nBytes` number of times.
 */
 
 #include "libft.h"
