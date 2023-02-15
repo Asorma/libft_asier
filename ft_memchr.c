@@ -12,10 +12,10 @@
 
 /*
 *	memchr
-*	Funcion que encuentra si hay un caracter de tipo unsigned en los 
-*	primeros nBytes del string que se le pasa.
-*	Si el caracter existe lo entrega y si no da un NULL
+*	Function that searches for an unsigned character in the first nBytes of the string passed to it.
+*	If the character is found, it returns a pointer to it; if not, it returns NULL.
 */
+
 
 #include "libft.h"
 
