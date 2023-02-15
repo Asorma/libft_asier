@@ -12,8 +12,9 @@
 
 /*
 *	isdigit
-*	Funcion que comprueba si el valor pertenece al sistema decimal
+*	Function that checks if the value belongs to the decimal system.
 */
+
 
 #include "libft.h"
 
