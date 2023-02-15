@@ -12,10 +12,11 @@
 
 /*
 *	bzero
-*	A esta funcion le llega un string y el numero de bytes que queremos
-*	selecionar. La funcion se ocupa de poner ceros desde el inicio del
-*	string hasta el valor nBytes que le hayamos pasado.
+*	This function takes a string and the number of bytes we want to select.
+*	The function sets the values of the bytes in the string to zero from the
+*	beginning of the string up to the value of nBytes that we passed to it.
 */
+
 
 #include "libft.h"
 
