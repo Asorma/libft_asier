@@ -12,7 +12,7 @@
 
 /*
 *	isalpha
-*	Funcion para chequear si el valor que se le pasa es alfabetico
+*	Function to check if the given value is alphabetic.
 */
 
 #include "libft.h"
