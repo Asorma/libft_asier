@@ -11,10 +11,10 @@
 /* ************************************************************************** */
 
 /*
-*	strchr
-*	Funcion que busca un caracter que le indicamos en un string que 
-*	le pasamos. Si lo encuentra, la funcion devuelve la posicion del caracter,
-*	si no, pues nos devuelve un NULL
+*	ft_strchr
+*	Function that searches for a character `c` in the string `str`. If it is
+*	found, the function returns a pointer to the location of the character.
+*	If not, the function returns NULL.
 */
 
 #include "libft.h"
