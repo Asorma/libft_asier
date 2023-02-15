@@ -11,10 +11,10 @@
 /* ************************************************************************** */
 
 /*
-*	toupper
-*	Funcion que chequea si el caracter alfabetico es minuscula y si es
-*	asi lo pasa a mayuscula
-*/
+ * toupper
+ * This function checks whether the alphabetic character is lowercase and
+ * converts it to uppercase.
+ */
 
 #include "libft.h"
 
