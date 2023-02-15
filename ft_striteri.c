@@ -10,6 +10,13 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+* ft_striteri
+* Function that applies the function `f` to each character in the string `s`,
+* passing its index and address as parameters. The function is applied to all
+* characters in the string `s`.
+*/
+
 #include "libft.h"
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
