@@ -53,7 +53,7 @@ char	**ft_split(char const *s, char c)
 			s++;
 		result[i] = ft_strndup(s, ft_strchr(s, c) - s);
 		if (!result[i++])
-			return (ft_free_ptr_array((void **)result, i));
+			return ((char **)ft_free_ptr_array((void **)result, i));
 		s += ft_strlen(result[i - 1]);
 	}
 	result[i] = NULL;
