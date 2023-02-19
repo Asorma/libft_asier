@@ -6,16 +6,16 @@
 /*   By: ade-orma <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/21 11:08:04 by ade-orma          #+#    #+#             */
-/*   Updated: 2023/01/21 11:25:43 by ade-orma         ###   ########.fr       */
+/*   Updated: 2023/02/19 16:27:31 by ade-orma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
 *	memchr
-*	Function that searches for an unsigned character in the first nBytes of the string passed to it.
+*	Function that searches for an unsigned character in the first nBytes of
+*	the string passed to it.
 *	If the character is found, it returns a pointer to it; if not, it returns NULL.
 */
-
 
 #include "libft.h"
 

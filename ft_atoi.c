@@ -6,7 +6,7 @@
 /*   By: ade-orma <ade-orma@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/08 15:11:19 by ade-orma          #+#    #+#             */
-/*   Updated: 2022/12/08 15:16:58 by ade-orma         ###   ########.fr       */
+/*   Updated: 2023/02/19 16:28:07 by ade-orma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 *	Takes the numbers from a string of ASCII numeric characters
 *	and converts them to their equivalent INT number for calculations.
 */
-
 
 #include "libft.h"
 #include <unistd.h>

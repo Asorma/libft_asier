@@ -6,7 +6,7 @@
 /*   By: ade-orma <ade-orma@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/30 21:07:48 by ade-orma          #+#    #+#             */
-/*   Updated: 2022/12/06 12:03:56 by ade-orma         ###   ########.fr       */
+/*   Updated: 2023/02/19 16:28:22 by ade-orma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 *	isalnum
 *	Checks whether the given value is alphanumeric.
 */
-
 
 #include "libft.h"
 
