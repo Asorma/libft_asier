@@ -11,19 +11,24 @@
 /* ************************************************************************** */
 
 /*
-*	ft_split
-*	Function that takes a string `s` and a delimiter character `c`, and 
-*	splits the string into words based on the delimiter. It first counts
-*	the number of words in the string, then allocates memory for an array 
-*	of strings to hold the words. It then copies each word into the array, 
-*	and finally adds a NULL terminator to the end of the array. 
-*	The function returns the array of strings.
+** ft_split
+**
+** Function that takes a string `s` and a delimiter character `c`, and 
+** splits the string into words based on the delimiter. It first counts
+** the number of words in the string, then allocates memory for an array 
+** of strings to hold the words. It then copies each word into the array, 
+** and finally adds a NULL terminator to the end of the array. 
+** The function returns the array of strings.
 */
+#include "libft.h"
 
 /*
-* ft_count_substrings
-* Counts the number of substrings in a string, using a delimiter character to separate them.
-* Returns a pointer to an array of strings, with each string representing a substring.
+** ft_count_substrings
+**
+** Counts the number of substrings in a string, using a delimiter character
+** to separate them.
+** Returns a pointer to an array of strings, with each string representing 
+** a substring.
 */
 char	**ft_count_substrings(char const *s, char c)
 {
@@ -50,9 +55,10 @@ char	**ft_count_substrings(char const *s, char c)
 }
 
 /*
-* ft_free_substrings
-* Frees memory allocated for an array of strings.
-* Returns a NULL pointer to indicate that the memory has been freed.
+** ft_free_substrings
+**
+** Frees memory allocated for an array of strings.
+** Returns a NULL pointer to indicate that the memory has been freed.
 */
 char	**ft_free_substrings(char **ptr)
 {
@@ -71,9 +77,11 @@ char	**ft_free_substrings(char **ptr)
 }
 
 /*
-* ft_alloc_substrings
-* Allocates memory for an array of strings, and copies substrings from a string into the array.
-* Returns a pointer to the array of strings.
+** ft_alloc_substrings
+**
+** Allocates memory for an array of strings, and copies substrings from a 
+** string into the array.
+** Returns a pointer to the array of strings.
 */
 char	**ft_alloc_substrings(char **ptr, char const *s, char c, size_t i)
 {
@@ -104,9 +112,10 @@ char	**ft_alloc_substrings(char **ptr, char const *s, char c, size_t i)
 }
 
 /*
-* ft_split
-* Splits a string into an array of substrings using a delimiter character.
-* Returns a pointer to the array of substrings.
+** ft_split
+**
+** Splits a string into an array of substrings using a delimiter character.
+** Returns a pointer to the array of substrings.
 */
 char	**ft_split(char const *s, char c)
 {
