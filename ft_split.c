@@ -20,8 +20,11 @@
 *	The function returns the array of strings.
 */
 
-#include "libft.h"
-
+/*
+* ft_count_substrings
+* Counts the number of substrings in a string, using a delimiter character to separate them.
+* Returns a pointer to an array of strings, with each string representing a substring.
+*/
 char	**ft_count_substrings(char const *s, char c)
 {
 	size_t	i;
@@ -46,6 +49,11 @@ char	**ft_count_substrings(char const *s, char c)
 	return (ptr);
 }
 
+/*
+* ft_free_substrings
+* Frees memory allocated for an array of strings.
+* Returns a NULL pointer to indicate that the memory has been freed.
+*/
 char	**ft_free_substrings(char **ptr)
 {
 	size_t	i;
@@ -62,6 +70,11 @@ char	**ft_free_substrings(char **ptr)
 	return (ptr);
 }
 
+/*
+* ft_alloc_substrings
+* Allocates memory for an array of strings, and copies substrings from a string into the array.
+* Returns a pointer to the array of strings.
+*/
 char	**ft_alloc_substrings(char **ptr, char const *s, char c, size_t i)
 {
 	size_t	start;
@@ -90,6 +103,11 @@ char	**ft_alloc_substrings(char **ptr, char const *s, char c, size_t i)
 	return (ptr);
 }
 
+/*
+* ft_split
+* Splits a string into an array of substrings using a delimiter character.
+* Returns a pointer to the array of substrings.
+*/
 char	**ft_split(char const *s, char c)
 {
 	char	**ptr;
