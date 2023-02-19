@@ -22,52 +22,40 @@
 
 #include "libft.h"
 
-static size_t	count_words(char const *s, char c)
+static int	get_word_count(char const *s, char c)
 {
-	size_t	count;
-	size_t	i;
+	int	count;
 
 	count = 0;
-	i = 0;
-	while (s[i])
+	while (*s)
 	{
-		while (s[i] && s[i] == c)
-			i++;
-		if (s[i])
+		if (*s != c && (*(s + 1) == c || *(s + 1) == '\0'))
 			count++;
-		while (s[i] && s[i] != c)
-			i++;
+		s++;
 	}
 	return (count);
 }
 
 char	**ft_split(char const *s, char c)
 {
-	char	**strs;
-	size_t	count;
-	size_t	i;
-	size_t	len;
+	char	**result;
+	int		word_count;
+	int		i;
 
-	if (!s)
-		return (NULL);
-	count = count_words(s, c);
-	strs = (char **)malloc(sizeof(char *) * (count + 1));
-	if (!strs)
+	word_count = get_word_count(s, c);
+	result = (char **)malloc(sizeof(char *) * (word_count + 1));
+	if (!result)
 		return (NULL);
 	i = 0;
-	while (i < count)
+	while (i < word_count)
 	{
-		while (*s && *s == c)
+		while (*s == c)
 			s++;
-		len = 0;
-		while (s[len] && s[len] != c)
-			len++;
-		strs[i] = ft_substr(s, 0, len);
-		if (!strs[i])
-			return (ft_free_ptr_array((void **)strs, i));
-		s += len;
-		i++;
+		result[i] = ft_strndup(s, ft_strchr(s, c) - s);
+		if (!result[i++])
+			return (ft_free_ptr_array((void **)result, i));
+		s += ft_strlen(result[i - 1]);
 	}
-	strs[count] = NULL;
-	return (strs);
+	result[i] = NULL;
+	return (result);
 }
