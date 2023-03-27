@@ -1,3 +1,8 @@
 # libft_asier
 
-Everything done except bonus
+First part passes francinette and francinette --strict
+
+Pass - 100
+
+
+Bonus part coming in a future...
